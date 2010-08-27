@@ -12,7 +12,7 @@ is licensed under GPL v3.0.
 Installation
 ------------------------------------------------------------------------------
 
-Place this folder in aurduino/hardware/libraries/.
+Place the contents of this folder in aurduino/hardware/libraries/seg7/.
 
 
 Usage

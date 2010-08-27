@@ -1,5 +1,5 @@
-Seg7	KEYWORD1
+Seg7	    KEYWORD1
 
-attach	KEYWORD2
-write	KEYWORD2
-
+attach	    KEYWORD2
+write	    KEYWORD2
+set_cathode KEYWORD2

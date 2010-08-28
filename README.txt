@@ -58,23 +58,22 @@ Wiring
 ------------------------------------------------------------------------------
 
 7 segment displays usually have 10 pins.
-Pins 2 and 8 are common - and are connected in either a common-anode (+V) or
+Pins 3 and 8 are common - and are connected in either a common-anode (+V) or
 common-cathode (GND) configuration (you only need to connect one of them).
 
 NOTE: Seg7 works in the common-anode configuration by default. If you have a 
-common-cathode display, you'll need to call the set_cathode() function before
-write()ing to the display; e.g.: display1.set_cathode(true);
+common-cathode display, you'll need to call the set_cathode() function, e.g.: display1.set_cathode(true);
 
 The rest of the pins are mapped as follows:
 
-a - 10
-b - 9
-c - 7
-d - 5
-e - 4
-f - 2
-g - 1
-dp/h - 6
+a - 7
+b - 6
+c - 4
+d - 2
+e - 1
+f - 9
+g - 10
+dp/h - 5
 
 
 Todo

@@ -66,7 +66,7 @@ void Seg7::process_mask(int idx, int mask)
 {
   int i;
   for (i = 0; i < 8; i++) {
-    int val = (mask & 1) ^ ~_cathode;
+    int val = (mask & 1) ^ !_cathode;
     mask >>= 1;
     switch(i) {
       case 0:

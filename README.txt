@@ -12,7 +12,8 @@ is licensed under GPL v3.0.
 Installation
 ------------------------------------------------------------------------------
 
-Place the contents of this folder in aurduino/hardware/libraries/seg7/.
+Place the Seg7 folder in <arduino software director>/libraries/.
+You'll need to restart the Arduino software before you can use the library.
 
 
 Usage

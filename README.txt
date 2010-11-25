@@ -54,6 +54,8 @@ display.write(39);
 NOTE: You can add up to three displays. If you wish to add more than three,
 simply increase the value of MAX_DISPLAYS in Seg7.h.
 
+ALSO NOTE: By default, the Seg7 library assumes that your display is common-anode. If your display is in fact common-cathode, you need to call set_cathode(true).
+
 
 Wiring
 ------------------------------------------------------------------------------

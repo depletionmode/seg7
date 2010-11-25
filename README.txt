@@ -1,5 +1,5 @@
 Seg7 library 1.0 by David Kaplan (david@2of1.org), 2010
-http://www.2of1.org
+http://blog.2of1.org
 
 About
 ------------------------------------------------------------------------------
@@ -21,38 +21,38 @@ Usage
 
 Firstly include the Seg7 header in your sketch:
 
-#include <seg7.h>
+#include <Seg7.h>
 
 Then initialise an instance of the library as follows:
 
-Seg7 display1 = Seg7();
+Seg7 display = Seg7();
 
-You then need to specify the 7 segment display pinout but calling the attach()
-function (see 'Wiring below'):
+You then need to specify the 7 segment display pinout buy calling the attach()
+function (see 'Wiring' below):
 
-display1.attach(0, 1, 2, 3, 4, 5, 6, 7);    // a, b, c, d, e, f, g, dp
+display.attach(0, 1, 2, 3, 4, 5, 6, 7);    // a, b, c, d, e, f, g, dp
 
 If you wish, you can specify the pin mapping (of the first display) in the 
 constructor. The following is equivalent to the above two lines:
 
-Seg7 display1 = Seg7(0, 1, 2, 3, 4, 5, 6, 7);
+Seg7 display = Seg7(0, 1, 2, 3, 4, 5, 6, 7);
 
 To write to the display, simply call the write() method:
 
-display1.write(7);
+display.write(7);
 
 The Seg7 library has support for multiple displays. Simply attach each in turn
 (starting from units, then tens, then hundreds...):
 
-display1.attach(0, 1, 2, 3, 4, 5, 6, 7);        // units
-display1.attach(8, 9, 10, 11, 12, 13, 14, 15);  // tens
+display.attach(0, 1, 2, 3, 4, 5, 6, 7);        // units
+display.attach(8, 9, 10, 11, 12, 13, 14, 15);  // tens
 
 You can then call write() with multiple digits:
 
-display1.write(39);
+display.write(39);
 
 NOTE: You can add up to three displays. If you wish to add more than three,
-simply increase the value of MAX_DISPLAYS in seg7.h.
+simply increase the value of MAX_DISPLAYS in Seg7.h.
 
 
 Wiring
